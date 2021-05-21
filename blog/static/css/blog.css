@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  padding: 0px;
+  /* border: 1px solid red; */
+  width: 70%;;
+}
+
+.techfont{
+  background: #ffffff;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.loader{
+  background: #f2f1f1;
+}
+
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-family: 'Russo One', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+}
+
+
+.centerstage{
+  margin: auto;
+  /* border: 1px solid blue; */
+  max-width: 70%;
+}
+
+.post{
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* margin-bottom: px; */
+}
+
+.texts{
+  width: 100%;
+  line-height: 1.2em;
+  height: 4.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
+
+.bigbrand{
+  font-family: 'Pattaya', sans-serif;
+  font-size: 1.5em;
+}
+

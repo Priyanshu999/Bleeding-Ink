@@ -85,6 +85,11 @@ body{
   font-size: 1.5em;
 }
 
-.remove{
+.listimagediv{
+  display: flex;
+  justify-content: center;
+}
 
+.listimage{
+  max-height: 530px;
 }

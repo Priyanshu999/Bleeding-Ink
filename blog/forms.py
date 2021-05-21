@@ -19,11 +19,13 @@ class PostForm(forms.ModelForm):
 
     class Meta():
         model = Post
-        fields = ('title', 'text',)
+        fields = ('title', 'text', 'images')
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'textinputclass'}),
             'text': forms.Textarea(attrs={'class': 'editable medium-editor-textarea postcontent'}),
+            # 'images': forms.ImageField(attrs={'multiple'})
+            # 'images': forms.ImageField(required=False, attrs={'class':'imagess'})
         }
 
 

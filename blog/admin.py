@@ -5,7 +5,7 @@ from .models import Post, Comment
 class PostAdmin(admin.ModelAdmin):
     list_display = ('author', 'title')
     fieldsets = [
-        (None, { 'fields': [('title','text', 'created_date', 'published_date')] } ),
+        (None, { 'fields': [('title','text', 'created_date', 'published_date', 'images')] } ),
     ]
 
     def save_model(self, request, obj, form, chang):

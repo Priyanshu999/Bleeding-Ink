@@ -1,3 +1,4 @@
+from distutils.command import upload
 from django.db import models
 from django.utils import timezone
 from django.urls import reverse
@@ -9,6 +10,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts', null=True)
     title = models.CharField(max_length=200)
     text = RichTextField(blank=True, null=True)
+    images = models.ImageField(null=True, blank=True, upload_to="uploads")
     created_date = models.DateTimeField(default=timezone.localtime)
     published_date = models.DateTimeField(blank=True, null=True)
 

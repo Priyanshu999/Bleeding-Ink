@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +13,11 @@ body{
   padding: 0px;
   /* border: 1px solid red; */
   width: 70%;;
+}
+
+.nav-item{
+  /* border: 1px solid red; */
+  margin-left: 30px;
 }
 
 .techfont{
@@ -29,9 +36,15 @@ body{
 }
 
 .posttitle{
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Quantico', sans-serif;
   font-size: 3em;
   text-align: center;
+}
+
+.posttitle-detail{
+  font-family: 'Quantico', sans-serif;
+  font-size: 3em;
+  text-align: center;  
 }
 
 .postcontent{
@@ -39,6 +52,10 @@ body{
   font-size: 1.5em;
 }
 
+.postkatitle{
+  color: #000000;
+  text-decoration: none;
+}
 
 .centerstage{
   margin: auto;
@@ -47,6 +64,7 @@ body{
 }
 
 .post{
+  text-align: center;
   background: #ffffff;
   margin-bottom: 10px;
   padding: 10px;
@@ -57,6 +75,51 @@ body{
   display: flex;
   justify-content: center;
 
+}
+
+.carousel-inner{
+  display: flex;
+  /* justify-content: center; */
+  /* border: 3px solid red; */
+  height: 80vh;
+}
+
+.detailimage{
+  border: 10px sold black !important;
+  width: auto !important;
+  margin: auto !important;
+  height: 100%;
+}
+
+.carousel-item{
+  /* margin-left: auto; */
+  /* display: flex; */
+  justify-content: center;
+  /* border: 3px solid yellow; */
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px; */
+  /* width: 100px; */
+  /* outline: black; */
+  /* background-size: 100%, 100%; */
+  /* border-radius: 50%; */
+  /* border: 2px solid black; */
+  /* background:gray; */
+/* } */
+
+.carousel-control-next-icon::after
+{
+  content: '>';
+  font-size: 40px;
+  color:black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: black;
 }
 
 .imagi{
@@ -75,21 +138,55 @@ body{
 
 .btn-comment{
   position: absolute;
-  margin-right: 10%;
+  margin-right: 17%;
   right: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .bigbrand{
+  color: #a62100 !important;
+  margin-right: 40px;
   font-family: 'Pattaya', sans-serif;
   font-size: 1.5em;
 }
 
 .listimagediv{
+  /* border: 1px solid red; */
+  padding-top: 5px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
 .listimage{
   max-height: 530px;
+  position: relative;
+  z-index: 3;
+  
+}
+
+.listimageback{
+  border: 1px solid gray;
+  max-height: 530px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  min-width: 42%;
+  position: absolute;
+  z-index: 2;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.bi{
+  color: #a62100;
+}
+
+.detail{
+  padding: 10px 10px 30px 10px ;
+  background: #ffffff;
 }

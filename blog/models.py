@@ -28,7 +28,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey('blog.Post', related_name='comments', on_delete=models.CASCADE)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='users')
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.localtime())
 
@@ -37,3 +37,11 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+
+
+class Image(models.Model):
+    post = models.ForeignKey(Post, default=None, on_delete=models.CASCADE, related_name="imagess")
+    image = models.ImageField(upload_to='images/')
+
+    def str(self):
+        return self.post.title 

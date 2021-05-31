@@ -53,6 +53,7 @@ body{
 }
 
 .postkatitle{
+  font-family: 'Quantico', sans-serif;
   color: #000000;
   text-decoration: none;
 }
@@ -129,7 +130,7 @@ body{
 .texts{
   width: 100%;
   line-height: 1.2em;
-  height: 4.5em;
+  height: 3.9em;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -159,6 +160,8 @@ body{
 }
 
 .listimage{
+  min-height: 350px;
+  min-width: 20%;
   max-height: 530px;
   position: relative;
   z-index: 3;
